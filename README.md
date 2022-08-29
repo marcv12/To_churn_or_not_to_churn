@@ -13,6 +13,10 @@ Links:
 Reach out to me on: marcviolides@yahoo.com for more info!
 
 
+
+
+## Ignore below: this is only in case the report isn't opening for you! I have provided a text-only format 
+
 To churn or not to churn, that is the question
 
 The project in question is a churn prediction problem: we have to predict for DLM bank which customers will
