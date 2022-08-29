@@ -43,14 +43,13 @@ just be throwing ourselves into the lion’s den.
 ## Phase 1: EDA:   
 FOR THIS PHASE RUN “EDA.py” file
 We are going to conduct an analysis of each of the following sections shown in the diagram below (see report)
-
+  
 ### Step 0: Data overview  
 From the overview function we defined, we see that we have 17 features, from which 11 are numerical and 6
 are objects (we excluded CID). You were kind enough to split the features into categories: we have basic info;
 target feature that we want to predict; Demographic features and variables which both constitute the
-independent variables. The dataset is clean, having 0 missing values, so we can proceed to the next step.
-Step 1: Target Variable (FOR THIS SECTION CHECK THE MICROSOFT EDGE FILE, OR
-WHATEVER BROWSER THAT APPEARS AFTER RUNNING “EDA.py”)
+independent variables. The dataset is clean, having 0 missing values, so we can proceed to the next step.  
+### Step 1: Target Variable (FOR THIS SECTION CHECK THE MICROSOFT EDGE FILE, OR WHATEVER BROWSER THAT APPEARS AFTER RUNNING “EDA.py”)  
 Starting with the target variable (Attrited_Flag), we notice that we are dealing with a binary classification
 exercise with unbalanced target variable
 - Attrited = 16.1%
