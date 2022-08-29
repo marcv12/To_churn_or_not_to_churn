@@ -16,7 +16,8 @@ Reach out to me on: marcviolides@yahoo.com for more info!
 
 
 ## Ignore below: this is only in case the report isn't opening for you! I have provided a text-only format 
-
+  
+  
 # To churn or not to churn, that is the question
 
 The project in question is a churn prediction problem: we have to predict for DLM bank which customers will
@@ -111,8 +112,6 @@ bit surprising since you expect these people to be financially stable at this po
 hinted. This is put in evidence even more with the boxplots of the diagram, with the first quartiles
 for both attrited and existing customers being respectively 36 and 36.75, and the third quartiles
 being 57 and 59.25, so most values are contained within the aforementioned range (40 to 59). In
-(maybe this is a message to get married?). We would expect
-
 this regard, the company should provide better services for this category of people (at that age
 they might be thinking about retirement, so why not provide them with a retirement plan, among
 other)
