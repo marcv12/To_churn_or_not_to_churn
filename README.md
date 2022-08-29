@@ -40,10 +40,11 @@ This is the longest part of our report, but we personally believe that this is a
 learning problem, as it helps us to center the problem at stake and we believe that without this step, we would
 just be throwing ourselves into the lion’s den.  
 
-Phase 1: EDA: FOR THIS PHASE RUN “EDA.py” file
-We are going to conduct an analysis of each of the following sections shown in the diagram below
+## Phase 1: EDA:   
+FOR THIS PHASE RUN “EDA.py” file
+We are going to conduct an analysis of each of the following sections shown in the diagram below (see report)
 
-Step 0: Data overview
+### Step 0: Data overview  
 From the overview function we defined, we see that we have 17 features, from which 11 are numerical and 6
 are objects (we excluded CID). You were kind enough to split the features into categories: we have basic info;
 target feature that we want to predict; Demographic features and variables which both constitute the
@@ -58,8 +59,8 @@ exercise with unbalanced target variable
 As a result, we should choose a metric that deals with imbalanced datasets, like F1 Score rather than
 accuracy, precision, recall or any of the other metrics we saw in class. The aforementioned metric is used to
 check the quality of the model predictions, being a harmonic mean of precision and recall.
-
-Step 2: Rest of Features (CHECK SCIVIEW WINDOW OF PYTHON)
+    
+### Step 2: Rest of Features (CHECK SCIVIEW WINDOW OF PYTHON)
 - Demographic features:
 ➢ Gender: we notice that there is a slightly higher proportion of females compared to males, but we
 do not believe that this will affect churn rate
@@ -91,9 +92,8 @@ transactions that are taking place, without overloading the system at the same t
 ➢ Credit limit: For the reason mentioned in the previous paragraph, it is low on average.
 ➢ Average utilization ratio: a bit low in our opinion compared to the number of transactions made.
 Now that we’ve had an idea about our data and we know where to redirect our thoughts, we can start to look
-at the churn rate feature by feature.
-Step 3: Churn rate by feature (BACK TO MICROSOFT EDGE AND ALSO ATTACHED EXCEL FILE
-FOR VALUES, OR YOU CAN JUST TRUST US 😊)
+at the churn rate feature by feature.  
+### Step 3: Churn rate by feature (BACK TO MICROSOFT EDGE AND ALSO ATTACHED EXCEL FILE FOR VALUES, OR YOU CAN JUST TRUST Me 😊)  
 - Demographic Features: Churn rate by:
 ➢ Gender: Not too much influence on churn rate as we presumed before.
 ➢ Education Level: Highest churn rate is among individuals with doctorates (27%) which is logical,
@@ -157,8 +157,8 @@ DLM should improve the experience of people with platinum cards, work on custome
 encourage people to buy more products, which helps them stay more active. It must also lower number of
 contacts and do more discounts to increase transactions and credit limits. Lastly, they must improve the
 cards’ benefits.  
-
-Phase 2: Data Preprocessing: YOU CAN NOW RUN THE “proj.py” FILE
+  
+## Phase 2: Data Preprocessing: YOU CAN NOW RUN THE “proj.py” FILE  
 1. The first step is to remove features that we will not use in our prediction and target, which are CID and
 CLIENTNUM.
 2. As we know, features that we use to predict must all be numerical ones, so we start by transforming
@@ -174,12 +174,12 @@ as 1 and attrited customer as 0. This would cause a huge problem for our metrics
 6. Conduct feature scaling to avoid inefficiency in algorithm.
   
   
-Phase 3: Vanilla Algorithms (excluding linear SVM because ineffective)
+## Phase 3: Vanilla Algorithms (excluding linear SVM because ineffective)  
 Now that we are done with preprocessing, we can start by testing some baseline algorithms, which we chose to
 be VANILLA algorithms. For the reasons previously mentioned, we chose Accuracy and F1 as the two metrics to
 evaluate our algorithms.  
-
-Phase 4: Optimizing Selected Algorithms: Random Forest and KNN
+  
+## Phase 4: Optimizing Selected Algorithms: Random Forest and KNN  
 - Our first idea to optimize was the way we saw in class, by drawing diagrams for optimal number of
 neighbors (KNN). You might ask: why don’t we also draw the diagram for the optimal number of trees (RF).
 That’s a good question, but RF having the accuracy and F1 that it has, will be taken for further optimization
@@ -225,8 +225,8 @@ output the ones that gave the optimal accuracy/score. Plus, time, as long as it 
 something that the DLM bank could use as a tradeoff for better accuracy: better take more time but be more
 accurate to avoid losing customers. But also, it must not be too time consuming (hours or days), because we
 are losing on potential customers that we could retain.  
-
-Phase 5: Insights and Conclusions
+  
+## Phase 5: Insights and Conclusions  
 We compared improved random forest models to be deceived and find out that the fully optimized versions
 only increased by a little bit. But then again, the algorithm per se performs well and anything that improves it
 makes it even better and a small change in accuracy at this stage can lead to a massive profit for the company in
@@ -252,7 +252,7 @@ and Grid Search.
 - We believe that the company will love our model and will event think about hiring us full time.
   
   
-Phase 6: Surprise! (NOW RUN “website.py”)
+## Phase 6: Surprise! (NOW RUN “website.py”)  
 We built a site/application where we pass in our file (churn.csv) and we get as an output the predictions that
 our optimal model (the best random forest model) gives us.
 Making your life simple: To make our life easier, I took the best optimal parameters after running Grid Search
