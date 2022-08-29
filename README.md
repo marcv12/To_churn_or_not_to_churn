@@ -1,4 +1,4 @@
-# Customer Churn  
+# Customer Churn with Python and Streamlit
 
 Through this project, you will be able to predict whether customers in your bank will churn (leave) or not. I have also provided a website that implements this automatically, where all you have to do is upload a file.  
 
