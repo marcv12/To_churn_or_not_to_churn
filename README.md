@@ -17,7 +17,7 @@ Reach out to me on: marcviolides@yahoo.com for more info!
 
 ## Ignore below: this is only in case the report isn't opening for you! I have provided a text-only format 
 
-To churn or not to churn, that is the question
+# To churn or not to churn, that is the question
 
 The project in question is a churn prediction problem: we have to predict for DLM bank which customers will
 churn and which will stay put in their company.
@@ -38,12 +38,7 @@ chose, limiting False Negatives to an extent.
 Where to start? First, we will explore the data, performing what is known as EDA (exploratory data analysis).
 This is the longest part of our report, but we personally believe that this is a crucial part of any machine
 learning problem, as it helps us to center the problem at stake and we believe that without this step, we would
-just be throwing ourselves into the lion’s den.
-I am sure we've all been there before, whether for a school or a work project, christmas or summer break:
-
-In summary, here are the main phases we undertook to design our project:
-
-Sounds easy right? Well, yes and no. Let’s see how we proceeded for each stage:
+just be throwing ourselves into the lion’s den.  
 
 Phase 1: EDA: FOR THIS PHASE RUN “EDA.py” file
 We are going to conduct an analysis of each of the following sections shown in the diagram below
@@ -161,7 +156,7 @@ Conclusion for Product features:
 DLM should improve the experience of people with platinum cards, work on customer loyalty and
 encourage people to buy more products, which helps them stay more active. It must also lower number of
 contacts and do more discounts to increase transactions and credit limits. Lastly, they must improve the
-cards’ benefits.
+cards’ benefits.  
 
 Phase 2: Data Preprocessing: YOU CAN NOW RUN THE “proj.py” FILE
 1. The first step is to remove features that we will not use in our prediction and target, which are CID and
@@ -177,11 +172,12 @@ as 1 and attrited customer as 0. This would cause a huge problem for our metrics
 4. Then, we split the data into y and X, the target variable and the other features, respectively
 5. Split data from previous phase into train and test sets (we chose 80%-20%)
 6. Conduct feature scaling to avoid inefficiency in algorithm.
-
+  
+  
 Phase 3: Vanilla Algorithms (excluding linear SVM because ineffective)
 Now that we are done with preprocessing, we can start by testing some baseline algorithms, which we chose to
 be VANILLA algorithms. For the reasons previously mentioned, we chose Accuracy and F1 as the two metrics to
-evaluate our algorithms.
+evaluate our algorithms.  
 
 Phase 4: Optimizing Selected Algorithms: Random Forest and KNN
 - Our first idea to optimize was the way we saw in class, by drawing diagrams for optimal number of
@@ -228,7 +224,7 @@ test out all possible combinations; while in Randomized Search CV, we take combi
 output the ones that gave the optimal accuracy/score. Plus, time, as long as it is not too exaggerated is
 something that the DLM bank could use as a tradeoff for better accuracy: better take more time but be more
 accurate to avoid losing customers. But also, it must not be too time consuming (hours or days), because we
-are losing on potential customers that we could retain.
+are losing on potential customers that we could retain.  
 
 Phase 5: Insights and Conclusions
 We compared improved random forest models to be deceived and find out that the fully optimized versions
@@ -254,7 +250,8 @@ leave it as is to illustrate the tradeoffs that we must do (time vs performance)
 class, but it can be improved by increasing the number of iterations and cv folds in Randomized Search CV
 and Grid Search.
 - We believe that the company will love our model and will event think about hiring us full time.
-
+  
+  
 Phase 6: Surprise! (NOW RUN “website.py”)
 We built a site/application where we pass in our file (churn.csv) and we get as an output the predictions that
 our optimal model (the best random forest model) gives us.
@@ -267,8 +264,9 @@ the results of our prediction. Enjoy!
 WARNING: notice that prediction in app starts from 0, in python CID starts from 1,
 so there is no decay error
 If you are too lazy to run the app (I don’t blame you), we provided 2 videos in the
-PowerPoint file
-
+PowerPoint file  
+  
+  
 Bibliography
 - https://learnpython.com/blog/python-customer-churn-prediction/
 - https://neptune.ai/blog/hyperparameter-tuning-in-python-a-complete-guide-2020
