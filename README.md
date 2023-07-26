@@ -52,7 +52,7 @@ After installing the required packages, you can interact with this project in tw
 2. Launch the web application using `website.py` and interact with the final optimized model. You can do this by running `streamlit run website.py` in your terminal.
 
 ## Licensing
-This project is licensed under the Apache License 2.0 - see the LICENSE file for more details.
+This project is licensed under the MIT license - see the LICENSE file for more details.
 
 ## Acknowledgements
 We would like to express our deepest gratitude to our professors and mentors who guided us throughout the project. We also acknowledge OpenAI's GPT-4 model for assisting in generating the text and insights for this README file. We appreciate the creators of the dataset and everyone else who contributed to making this project a success.
